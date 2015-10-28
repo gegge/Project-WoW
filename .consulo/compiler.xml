@@ -2,22 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration" url="file://$PROJECT_DIR$/Build">
     <module name="Project WoW" exclude="true">
-      <output url="file://$PROJECT_DIR$/Build" type="PRODUCTION" />
-      <output url="file://$PROJECT_DIR$/Build/test/Project WoW" type="TEST" />
-      <output url="file://$PROJECT_DIR$/Build/production_resource/Project WoW" type="PRODUCTION_RESOURCE" />
-      <output url="file://$PROJECT_DIR$/Build/test_resource/Project WoW" type="TEST_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/out" type="PRODUCTION" />
+      <output url="file://$PROJECT_DIR$/out/test" type="TEST" />
+      <output url="file://$PROJECT_DIR$/out/production_resource" type="PRODUCTION_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/out/test_resource" type="TEST_RESOURCE" />
     </module>
     <module name="RemoteServer" exclude="true">
       <output url="file://$PROJECT_DIR$/Build" type="PRODUCTION" />
-      <output url="file://$PROJECT_DIR$/Projects/RemoteServer/Build/test" type="TEST" />
-      <output url="file://$PROJECT_DIR$/Projects/RemoteServer/Buildproduction_resource" type="PRODUCTION_RESOURCE" />
-      <output url="file://$PROJECT_DIR$/Projects/RemoteServer/Buildtest_resource" type="TEST_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/Projects/Servers/RemoteServer/Build/test" type="TEST" />
+      <output url="file://$PROJECT_DIR$/Projects/Servers/RemoteServer/Buildproduction_resource" type="PRODUCTION_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/Projects/Servers/RemoteServer/Buildtest_resource" type="TEST_RESOURCE" />
     </module>
     <module name="LappaORM" exclude="true">
-      <output url="file://$PROJECT_DIR$/LappaORM/Build/production" type="PRODUCTION" />
-      <output url="file://$PROJECT_DIR$/LappaORM/Build/test" type="TEST" />
-      <output url="file://$PROJECT_DIR$/LappaORM/Build/production_resource" type="PRODUCTION_RESOURCE" />
-      <output url="file://$PROJECT_DIR$/LappaORM/Build/test_resource" type="TEST_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/Libraries/LappaORM/Build/production" type="PRODUCTION" />
+      <output url="file://$PROJECT_DIR$/Libraries/LappaORM/Build/test" type="TEST" />
+      <output url="file://$PROJECT_DIR$/Libraries/LappaORM/Build/production_resource" type="PRODUCTION_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/Libraries/LappaORM/Build/test_resource" type="TEST_RESOURCE" />
     </module>
     <module name="Framework" exclude="true">
       <output url="file://$PROJECT_DIR$/Projects/Framework/Build/production" type="PRODUCTION" />
