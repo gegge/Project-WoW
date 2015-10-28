@@ -73,6 +73,9 @@
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Data" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
         </module-layer>
         <module-layer name="Release">
           <extension id="mono-csharp" unsafe-code="false" language-version-module-name="" language-version-name="" optimize-code="true" platform="ANY_CPU" custom-compiler-sdk-module-name="" custom-compiler-sdk-name="" />
@@ -83,6 +86,9 @@
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Data" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
         </module-layer>
       </module>
       <module name="Framework" dirurl="file://$PROJECT_DIR$/Projects/Framework" current-layer="Release">
