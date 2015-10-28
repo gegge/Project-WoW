@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration" url="file://$PROJECT_DIR$/Build">
+    <module name="Project WoW" exclude="true">
+      <output url="file://$PROJECT_DIR$/Build" type="PRODUCTION" />
+      <output url="file://$PROJECT_DIR$/out/test/Project WoW" type="TEST" />
+      <output url="file://$PROJECT_DIR$/out/production_resource/Project WoW" type="PRODUCTION_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/out/test_resource/Project WoW" type="TEST_RESOURCE" />
+    </module>
+    <module name="RemoteServer" exclude="true">
+      <output url="file://$PROJECT_DIR$/Build" type="PRODUCTION" />
+      <output url="file://$PROJECT_DIR$/out/test/RemoteServer" type="TEST" />
+      <output url="file://$PROJECT_DIR$/out/production_resource/RemoteServer" type="PRODUCTION_RESOURCE" />
+      <output url="file://$PROJECT_DIR$/out/test_resource/RemoteServer" type="TEST_RESOURCE" />
+    </module>
+  </component>
+  <component name="JavaCompilerConfiguration" compiler="JavacCompiler">
+    <annotation-processing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotation-processing>
+  </component>
+  <component name="ResourceCompilerConfiguration">
+    <resourceExtensions />
+  </component>
+</project>

@@ -1,3 +1,4 @@
 [submodule "Libraries/LappaORM"]
 	path = Libraries/LappaORM
 	url = git://github.com/Arctium-Software/LappaORM.git
+	branch = consulo
