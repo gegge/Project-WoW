@@ -48,6 +48,7 @@
           <orderEntry type="dot-net-library" name="System.ComponentModel.Composition" />
           <orderEntry type="dot-net-library" name="System.Runtime.Serialization" />
           <orderEntry type="dot-net-library" name="System.Xml.Linq" />
+          <orderEntry type="module" module-name="Framework" />
         </module-layer>
         <module-layer name="Release">
           <extension id="mono-csharp" unsafe-code="false" language-version-module-name="" language-version-name="" optimize-code="true" platform="ANY_CPU" custom-compiler-sdk-module-name="" custom-compiler-sdk-name="" />
@@ -82,6 +83,36 @@
           <orderEntry type="sourceFolder" />
           <orderEntry type="dot-net-library" name="mscorlib" />
           <orderEntry type="dot-net-library" name="System" />
+        </module-layer>
+      </module>
+      <module name="Framework" dirurl="file://$PROJECT_DIR$/Projects/Framework" current-layer="Release">
+        <module-layer name="Debug">
+          <extension id="mono-csharp" unsafe-code="false" language-version-module-name="" language-version-name="_6_0" optimize-code="false" platform="ANY_CPU" custom-compiler-sdk-module-name="" custom-compiler-sdk-name="" />
+          <extension id="mono-dotnet" sdk-module-name="" sdk-name="Mono 4.5 (predefined)" target="NET_MODULE" debug="true" allow-source-roots="false" file-name="$ModuleName$.$TargetFileExt$" output-dir="$ModuleProductionOutputDirPath$" namespace-prefix="">
+            <define>DEBUG</define>
+            <define>TRACE</define>
+          </extension>
+          <content url="file://$MODULE_DIR$" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="System" />
+        </module-layer>
+        <module-layer name="Release">
+          <extension id="mono-csharp" unsafe-code="false" language-version-module-name="" language-version-name="_6_0" optimize-code="true" platform="ANY_CPU" custom-compiler-sdk-module-name="" custom-compiler-sdk-name="" />
+          <extension id="mono-dotnet" sdk-module-name="" sdk-name="Mono 4.5 (predefined)" target="NET_MODULE" debug="false" allow-source-roots="false" file-name="$ModuleName$.$TargetFileExt$" output-dir="$ModuleProductionOutputDirPath$" namespace-prefix="">
+            <define>TRACE</define>
+          </extension>
+          <content url="file://$MODULE_DIR$" />
+          <orderEntry type="sourceFolder" />
+          <orderEntry type="dot-net-library" name="mscorlib" />
+          <orderEntry type="dot-net-library" name="System" />
+          <orderEntry type="module" module-name="LappaORM" exported="" />
+          <orderEntry type="dot-net-library" name="System.Core" />
+          <orderEntry type="dot-net-library" name="System.Data" />
+          <orderEntry type="dot-net-library" name="System.Numerics" />
+          <orderEntry type="dot-net-library" name="System.Runtime.Serialization" />
+          <orderEntry type="dot-net-library" name="System.ServiceModel" />
+          <orderEntry type="dot-net-library" name="System.Xml" />
         </module-layer>
       </module>
     </modules>

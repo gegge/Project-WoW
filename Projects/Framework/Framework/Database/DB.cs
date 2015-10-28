@@ -5,5 +5,6 @@ namespace Framework.Database
 {
     public class DB
     {
+        public static Lappa_ORM.Database Auth = new Lappa_ORM.Database();
     }
 }
