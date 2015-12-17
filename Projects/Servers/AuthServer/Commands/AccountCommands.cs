@@ -107,5 +107,26 @@ namespace AuthServer.Commands
                     Log.Error($"Account '{email}' doesn't exist.");
             }
         }
+
+        [ConsoleCommand("IsOnline", "")]
+        public static void IsOnline(string[] args)
+        {
+            var account = Command.Read<string>(args, 0);
+
+            if (account != "")
+            {
+                DB.Auth.Where<GameAccount>(ga => ga.Game == account).ForEach(gameaccount => {
+                    switch (gameaccount.IsOnline)
+                    {
+                        case false:
+                            Log.Message("Offline");
+                            break;
+                        case true:
+                            Log.Message("Online");
+                            break;
+                    }
+                });
+            }
+        }
     }
 }
