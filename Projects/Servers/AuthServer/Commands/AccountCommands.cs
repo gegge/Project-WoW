@@ -115,13 +115,19 @@ namespace AuthServer.Commands
 
             if (accountEmail != "")
             {
-                DB.Auth.Where<Account>(a => a.Email == accountEmail).ForEach(gameaccount => {
-                    DB.Auth.Where<GameAccount>(ga => ga.AccountId == gameaccount.Id).ForEach(account => {
+                var gameaccount = DB.Auth.Single<Account>(a => a.Email == accountEmail);
+
+                DB.Auth.Where<GameAccount>(ga => ga.AccountId == gameaccount.Id).ForEach(account =>
+                {
+                    if (account != null)
+                    {
                         if (account.IsOnline)
                             Log.Message("Online");
                         else
                             Log.Message("Offline");
-                    });
+                    }
+                    else
+                        Log.Error($"Account '{accountEmail}' doesn't exist.");
                 });
             }
         }
