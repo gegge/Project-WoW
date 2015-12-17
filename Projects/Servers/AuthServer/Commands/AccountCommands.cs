@@ -116,15 +116,10 @@ namespace AuthServer.Commands
             if (account != "")
             {
                 DB.Auth.Where<GameAccount>(ga => ga.Game == account).ForEach(gameaccount => {
-                    switch (gameaccount.IsOnline)
-                    {
-                        case false:
-                            Log.Message("Offline");
-                            break;
-                        case true:
-                            Log.Message("Online");
-                            break;
-                    }
+                    if (gameaccount.IsOnline)
+                        Log.Message("Online");
+                    else
+                        Log.Message("Offline");
                 });
             }
         }
