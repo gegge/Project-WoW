@@ -111,15 +111,17 @@ namespace AuthServer.Commands
         [ConsoleCommand("IsOnline", "")]
         public static void IsOnline(string[] args)
         {
-            var account = Command.Read<string>(args, 0);
+            var accountEmail = Command.Read<string>(args, 0);
 
-            if (account != "")
+            if (accountEmail != "")
             {
-                DB.Auth.Where<GameAccount>(ga => ga.Game == account).ForEach(gameaccount => {
-                    if (gameaccount.IsOnline)
-                        Log.Message("Online");
-                    else
-                        Log.Message("Offline");
+                DB.Auth.Where<Account>(a => a.Email == accountEmail).ForEach(gameaccount => {
+                    DB.Auth.Where<GameAccount>(ga => ga.AccountId == gameaccount.Id).ForEach(account => {
+                        if (account.IsOnline)
+                            Log.Message("Online");
+                        else
+                            Log.Message("Offline");
+                    });
                 });
             }
         }
