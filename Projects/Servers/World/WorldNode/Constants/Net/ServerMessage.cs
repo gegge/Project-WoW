@@ -7,5 +7,6 @@ namespace WorldNode.Constants.Net
     enum ServerMessage : ushort
     {
         LogoutComplete = 0x0C7A,
+        RequestCemeteryListResponse = 0x0E71,
     }
 }
