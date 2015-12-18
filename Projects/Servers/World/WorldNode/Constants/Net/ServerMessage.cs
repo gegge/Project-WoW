@@ -9,7 +9,7 @@ namespace WorldNode.Constants.Net
         AbortNewWorld = 0x01f3,
         AccountCriteriaUpdate = 0x1e2a,
         AccountDataTimes = 0x09fb,
-        AccountHeirloomUpdate = 0xbadd, // no client handler
+        AccountHeirloomUpdate = 0x2000, // no client handler
         AccountMountUpdate = 0x03b4,
         AccountToysUpdate = 0x013b,
         AchievementDeleted = 0x0064,
