@@ -84,6 +84,7 @@
     <Compile Include="Network\NodeSession.cs" />
     <Compile Include="Packets\Client\LogoutRequest.cs" />
     <Compile Include="Packets\Client\RequestCemeteryList.cs" />
+    <Compile Include="Packets\Client\SetTitleRequest.cs" />
     <Compile Include="Packets\Handlers\AuthHandler.cs" />
     <Compile Include="Packets\Handlers\LogoutHandler.cs" />
     <Compile Include="Packets\Handlers\MiscHandler.cs" />

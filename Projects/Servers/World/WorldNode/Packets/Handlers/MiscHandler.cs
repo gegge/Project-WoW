@@ -16,5 +16,11 @@ namespace WorldNode.Packets.Handlers
             //Get Player team and ZoneID, get list of all graveyards in that ZoneID. If list empty, throw error else Write the RequestCemeteryListResponse packet.
             //await session.Send(new RequestCemeteryListResponse { IsGossipTriggered = false, Count = 0 });
         }
+
+        [Message(ClientMessage.SetTitle, SessionState.All)]
+        public static void HandleSetTitle(SetTitleRequest title, NodeSession session)
+        {
+            session.Player.PlayerData.PlayerTitle.Value = title.TitleID;
+        }
     }
 }
